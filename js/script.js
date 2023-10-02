@@ -1,21 +1,28 @@
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+document.addEventListener("DOMContentLoaded", () => {
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const h1 = document.querySelector("h1");
 
-document.querySelector("h1").onmouseover = event => {
-    let iterations = 0;
+    function animateText() {
+        const targetText = h1.dataset.value;
+        let iterations = 0;
 
-    const interval = setInterval(() => {
-        event.target.innerText = event.target.innerText.split("")
-            .map((_letter, index) => {
-                if (index < iterations)
-                    return event.target.dataset.value[index];
-                return letters[Math.floor(Math.random() * 26)]
-            })
-            .join("");
+        const interval = setInterval(() => {
+            h1.textContent = targetText
+                .split("")
+                .map((_, index) =>
+                    index < iterations
+                        ? targetText[index]
+                        : letters[Math.floor(Math.random() * 26)]
+                )
+                .join("");
 
-        if (iterations >= event.target.dataset.value.length) {
-            clearInterval(interval);
-        }
+            if (iterations >= targetText.length) {
+                clearInterval(interval);
+            }
 
-        iterations += 1 / 3;
-    }, 30);
-}
+            iterations += 1 / 3;
+        }, 30);
+    }
+
+    animateText(); // Start the animation on page load
+});
