@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const h1 = document.querySelector("h1");
+    const span = document.querySelector(".overlay");
 
     function animateText() {
-        const targetText = h1.dataset.value;
+        const targetText = span.textContent;
         let iterations = 0;
 
         const interval = setInterval(() => {
-            h1.textContent = targetText
+            const newText = targetText
                 .split("")
                 .map((_, index) =>
                     index < iterations
@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         : letters[Math.floor(Math.random() * 26)]
                 )
                 .join("");
+
+            span.textContent = newText;
 
             if (iterations >= targetText.length) {
                 clearInterval(interval);
