@@ -1,24 +1,19 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
+  margin: 0;
 }
 
-.text-container{
-    /* Simple approach */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    
-    /* Complex approach */
-    /* display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh; */
+.text-container {
+  /* Simple approach */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-h1{
-    color: white;
-    font-size: 5rem;
-    font-family: "Space Mono", monospace;
-    text-transform: uppercase;
+h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
 }
