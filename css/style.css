@@ -3,15 +3,17 @@ body{
 }
 
 .text-container{
-    /* display: flex;
+    /* Simple approach */
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; */
+    min-height: 100vh;
     
-    display: grid;
+    /* Complex approach */
+    /* display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 100vh; */
 }
 
 h1{
