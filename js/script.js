@@ -26,5 +26,8 @@ function animateText() {
 }
 
 window.onload = () => {
-    animateText(); // Start the animation on page load
+    // Delay the execution of animateText by 2000 milliseconds (2 seconds)
+    setTimeout(() => {
+        animateText();
+    }, 750);
 };
