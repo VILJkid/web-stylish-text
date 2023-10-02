@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+window.onload = () => {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const span = document.querySelector(".overlay");
 
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             iterations += 1 / 3;
-        }, 30);
+        }, 50);
     }
 
     animateText(); // Start the animation on page load
-});
+};
