@@ -4,7 +4,6 @@ body {
 }
 
 .text-container {
-  /* Simple approach */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,9 +27,27 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 100%;
   background-color: red;
   opacity: 0.7; /* You can adjust the opacity as needed */
   z-index: -1; /* Ensure it's below the text */
+  animation: expandWidth 1.5s ease-in-out forwards; /* Define the animation */
+}
+
+@keyframes expandWidth {
+  0%, 100% {
+    width: 0%; /* Start and end with 0% width */
+    left: 0%; /* Start and end with left at 0% */
+  }
+
+  50% {
+    width: 100%; /* At the midpoint, have 100% width */
+    left: 0%; /* At the midpoint, keep left at 0% */
+  }
+
+  100% {
+    width: 0%; /* End with 0% width */
+    left: 100%; /* End with left at 100% */
+  }
 }
