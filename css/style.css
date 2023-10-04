@@ -36,7 +36,7 @@ h1 {
 }
 
 @keyframes expandWidth {
-  0%, 100% {
+  0% {
     width: 0%; /* Start and end with 0% width */
     left: 0%; /* Start and end with left at 0% */
   }
