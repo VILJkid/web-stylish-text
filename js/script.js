@@ -1,8 +1,10 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const span = document.querySelector(".overlay");
+const text = document.querySelector("h1");
 
 function animateText() {
-    const targetText = span.textContent;
+    text.style.opacity = 1;
+
+    const targetText = text.textContent;
     let iterations = 0;
 
     const interval = setInterval(() => {
@@ -15,7 +17,7 @@ function animateText() {
             )
             .join("");
 
-        span.textContent = newText;
+        text.textContent = newText;
 
         if (iterations >= targetText.length) {
             clearInterval(interval);
