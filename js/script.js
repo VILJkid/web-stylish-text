@@ -28,7 +28,6 @@ function animateText() {
 }
 
 window.onload = () => {
-    // Delay the execution of animateText by 2000 milliseconds (2 seconds)
     setTimeout(() => {
         animateText();
     }, 750);
