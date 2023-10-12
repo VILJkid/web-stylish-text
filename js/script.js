@@ -2,8 +2,6 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const text = document.querySelector("h1");
 
 function animateText() {
-    text.style.opacity = 1;
-
     const targetText = text.textContent;
     let iterations = 0;
 
@@ -28,6 +26,9 @@ function animateText() {
 }
 
 window.onload = () => {
+    setTimeout(() => {
+        text.style.opacity = 1;
+    }, 700);
     setTimeout(() => {
         animateText();
     }, 750);
