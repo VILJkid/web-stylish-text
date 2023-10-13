@@ -41,7 +41,7 @@ h1 {
 h1::after {
   content: "|";
   color: white;
-  animation: blink 0.3s ease-in infinite alternate; /* Add the blinking animation */
+  animation: blink 0.3s ease-in infinite alternate;
 }
 
 @keyframes expandWidth {
