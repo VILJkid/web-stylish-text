@@ -11,7 +11,7 @@ body {
 }
 
 .overlay {
-  position: relative; /* Add relative positioning to the span element */
+  position: relative;
 }
 
 .overlay::before {
