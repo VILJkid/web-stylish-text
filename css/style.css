@@ -24,7 +24,7 @@ body {
   background-color: white;
   opacity: 1;
   z-index: 1;
-  animation: expandWidth 1.5s ease-in-out forwards; /* Define the animation */
+  animation: expandWidth 1.5s ease-in-out forwards;
 }
 
 h1 {
