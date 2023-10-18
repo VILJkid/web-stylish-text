@@ -47,7 +47,7 @@ h1::after {
 @keyframes expandWidth {
   0% {
     width: 0%;
-    left: 0%; /* Start and end with left at 0% */
+    left: 0%;
   }
 
   50% {
