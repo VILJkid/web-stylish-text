@@ -51,7 +51,7 @@ h1::after {
   }
 
   50% {
-    width: 100%; /* At the midpoint, have 100% width */
+    width: 100%;
     left: 0%; /* At the midpoint, keep left at 0% */
   }
 
