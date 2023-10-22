@@ -56,7 +56,7 @@ h1::after {
   }
 
   100% {
-    width: 0%; /* End with 0% width */
+    width: 0%;
     left: 100%; /* End with left at 100% */
   }
 }
