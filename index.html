@@ -4,7 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stylish Text</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="preload"
+      href="css/style.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
+
+    <link
+      rel="preload"
+      href="js/script.js"
+      as="script"
+      onload="this.onload=null;this.rel='preload'"
+    />
   </head>
   <body>
     <div class="random-text-container">
