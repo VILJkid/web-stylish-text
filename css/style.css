@@ -3,18 +3,17 @@ body {
   margin: 0;
 }
 
-.text-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.random-text-container {
+  display: grid;
+  place-items: center;
   min-height: 100vh;
 }
 
-.overlay {
+.random-text-overlay {
   position: relative;
 }
 
-.overlay::before {
+.random-text-overlay::before {
   content: "";
   position: absolute;
   top: 0;
@@ -27,7 +26,7 @@ body {
   animation: expandWidth 1.5s ease-in-out forwards;
 }
 
-h1 {
+.random-text {
   margin: 0;
   color: white;
   font-size: 5rem;
@@ -38,7 +37,7 @@ h1 {
   transition: opacity 0.75s;
 }
 
-h1::after {
+.random-text::after {
   content: "|";
   color: white;
   animation: blink 0.3s ease-in infinite alternate;
